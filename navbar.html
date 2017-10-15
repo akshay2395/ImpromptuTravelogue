@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MyPortfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigationBar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                 <span class="glyphicon glyphicon-align-justify"></span>                
+             </button>
+            
+<a class="navbar-brand" href="index.html" id="websiteName">Impromptu Travelogue</a>
+        </div>
+    
+        <div class="collapse navbar-collapse" id="myNavbar">
+        
+            <ul class="nav navbar-nav navbar-right">
+            
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Destinations</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="javascript:document.location.href=destinationFunc('kalsubai.html');">Kalsubai</a></li>
+                        <li><a href="javascript:document.location.href=destinationFunc('gorakhgad.html');">Gorakhgad</a></li>
+                        <li><a href="javascript:document.location.href=destinationFunc('rajmachi.html');">Rajmachi</a></li>
+                        <li><a href="javascript:document.location.href=destinationFunc('dhanaulti.html');">Dhanaulti</a></li>
+                    </ul>
+                </li>
+      
+                <li><a href="javascript:document.location.href=aboutUsFunc('AboutUs.html');">About Us</a></li>
+                   
+            </ul>
+        </div>
+    </div>  
+
+</nav>
+
+<script type="text/javascript">
+
+    function destinationFunc(page) {
+
+               return "https://akshay2395.github.io/ImpromptuTravelogue/destinations/" + page ;
+
+           }
+
+    function aboutUsFunc(aboutpage){
+   
+                return  "https://akshay2395.github.io/ImpromptuTravelogue/" + aboutpage ;
+    }
+
+var home="index.html";
+    
+</script>
+
+</body>
+
+</html>
